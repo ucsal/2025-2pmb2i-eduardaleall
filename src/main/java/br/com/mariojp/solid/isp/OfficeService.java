@@ -5,7 +5,5 @@ public class OfficeService {
     public OfficeService(MultiFunctionDevice device){ this.device = device; }
     public void printReport(String content){
         device.print(content);
-        // BUG: chama scan sem necessidade
-        device.scan("audit.txt");
     }
 }
